@@ -1,2 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="pref_category_general">Preferencias Generales</string>
+    <string name="pref_title_viewicon">Mostrar Imagen</string>
+    <string name="pref_description_viewicon">Al activar mostramos las imagenes de los listados</string>
+    <string name="pref_summary_numcolumn">Número de columnas que se mostrarán en el recicler view</string>
+    <string name="pref_title_numcolumn">Número de Columnas</string>
+    <string-array name="pref_entries_numcolumn">
+        <item>1 columna</item>
+        <item>2 columnas</item>
+        <item>3 columnas</item>
+        <item>4 columnas</item>
+    </string-array>
+    <string-array name="pref_entriesvalues_numcolumn">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="pref_about_title">Acerca de</string>
+    <string name="pref_conf_user_title">Configuración de usuario</string>
+    <string name="pref_conf_user_remember_title">Recordar Usuario</string>
+    <string name="pref_conf_user_remember_summary">Indica si el usuario se queda almacenado</string>
+    <string name="pre_conf_user_name_title">Usuario</string>
+    <string name="pre_conf_user_name_summary">Nombre del usuario</string>
+    <string name="pre_conf_user_password_title">Password</string>
+    <string name="pre_conf_user_password_summary">Contraseña del usuario</string>
+</resources>

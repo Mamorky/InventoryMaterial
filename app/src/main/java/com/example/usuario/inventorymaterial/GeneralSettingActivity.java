@@ -1,4 +1,4 @@
-package com.example.usuario.inventory;
+package com.example.usuario.inventorymaterial;
 
 import android.content.Intent;
 import android.os.Bundle;

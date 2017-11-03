@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory android:title="@string/pref_conf_user_title">
+        <SwitchPreference android:title="@string/pref_conf_user_remember_title"
+            android:summary="@string/pref_conf_user_remember_summary"/>
+    </PreferenceCategory>
+    <ListPreference android:title="@string/pre_conf_user_name_title"
+        android:summary="@string/pre_conf_user_name_summary"/>
+    <ListPreference android:title="@string/pre_conf_user_password_title"
+        android:summary="@string/pre_conf_user_password_summary"/>
 </PreferenceScreen>

@@ -1,4 +1,4 @@
-package com.example.usuario.inventory;
+package com.example.usuario.inventorymaterial;
 
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 
-import com.example.usuario.inventory.adapter.SectorAdapter;
-import com.example.usuario.inventory.pojo.Sector;
+import com.example.usuario.inventorymaterial.adapter.SectorAdapter;
+import com.example.usuario.inventorymaterial.pojo.Sector;
 
 import java.util.ArrayList;
 
@@ -28,6 +29,9 @@ public class SectorActivity extends AppCompatActivity {
 
         // Para que se visualice el ReciclerView es necesario tener un layoutPadre
         recyclerSector.setLayoutManager(new GridLayoutManager(this,2));
+
+        Toolbar toolbar = findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
 
         if(savedInstanceState != null){
             sectorAdapter = new SectorAdapter(savedInstanceState.<Sector>getParcelableArrayList(("sector")));
@@ -54,8 +58,5 @@ public class SectorActivity extends AppCompatActivity {
 
     @Override
     public void onRestoreInstanceState(Bundle inState) {
-        super.onRestoreInstanceState(inState);
-        SectorAdapter adapterGuardado = new SectorAdapter(inState.<Sector>getParcelableArrayList("sector"));
-        recyclerSector.setAdapter(adapterGuardado);
     }
 }

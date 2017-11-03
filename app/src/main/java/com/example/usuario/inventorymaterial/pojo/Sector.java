@@ -1,4 +1,4 @@
-package com.example.usuario.inventory.pojo;
+package com.example.usuario.inventorymaterial.pojo;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -1,4 +1,4 @@
-package com.example.usuario.inventory;
+package com.example.usuario.inventorymaterial;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

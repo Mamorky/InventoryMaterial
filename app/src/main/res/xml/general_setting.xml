@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory android:title="@string/pref_category_general">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="showimage"
+            android:title="@string/pref_title_viewicon"
+            android:summary="@string/pref_description_viewicon"/>
+
+        <ListPreference android:key = "numcolumn"
+            android:summary="@string/pref_summary_numcolumn"
+            android:title="@string/pref_title_numcolumn"
+            android:entries="@array/pref_entries_numcolumn"
+            android:entryValues="@array/pref_entriesvalues_numcolumn">
+        </ListPreference>
+        <Preference android:key="aboutus" android:title="@string/pref_about_title">
+            <intent android:targetClass="com.example.usuario.inventory.AboutActivity" android:targetPackage="com.example.usuario.inventory"/>
+        </Preference>
+    </PreferenceCategory>
 </PreferenceScreen>
