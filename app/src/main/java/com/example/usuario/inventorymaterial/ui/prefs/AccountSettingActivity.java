@@ -1,8 +1,10 @@
-package com.example.usuario.inventorymaterial;
+package com.example.usuario.inventorymaterial.ui.prefs;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.support.annotation.Nullable;
+
+import com.example.usuario.inventorymaterial.R;
 
 /**
  * Created by mamorky on 2/11/17.

@@ -1,19 +1,16 @@
-package com.example.usuario.inventorymaterial;
+package com.example.usuario.inventorymaterial.ui.sector;
 
-import android.os.PersistableBundle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 
+import com.example.usuario.inventorymaterial.R;
 import com.example.usuario.inventorymaterial.adapter.SectorAdapter;
 import com.example.usuario.inventorymaterial.pojo.Sector;
-
-import java.util.ArrayList;
 
 public class SectorActivity extends AppCompatActivity {
 

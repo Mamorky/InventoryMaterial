@@ -1,10 +1,10 @@
-package com.example.usuario.inventorymaterial;
+package com.example.usuario.inventorymaterial.ui.about;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.ViewGroup;
 
+import com.example.usuario.inventorymaterial.R;
 import com.vansuita.materialabout.builder.AboutBuilder;
 import com.vansuita.materialabout.views.AboutView;
 
