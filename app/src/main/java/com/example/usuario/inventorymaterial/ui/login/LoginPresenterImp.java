@@ -41,6 +41,7 @@ public class LoginPresenterImp implements LoginPresenter,LoginInteractor.OnLogin
 
     @Override
     public void onSucess() {
+        loginView.navigateToHome();
     }
 
     @Override

@@ -1,5 +1,8 @@
 package com.example.usuario.inventorymaterial.utils;
 
+import com.example.usuario.inventorymaterial.pojo.User;
+
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,9 +22,19 @@ public class CommonUtils {
     public static boolean isPasswordValid(String password){
         Pattern pattern;
         Matcher matcher;
-        final String PASSWORD_PATTERN = "(?=^.{8,}$)((?=.*\\d)|(?=.*\\W+))(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$";
+
+        final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{4,}$";
         pattern = Pattern.compile(PASSWORD_PATTERN);
         matcher = pattern.matcher(password);
         return matcher.matches();
+    }
+
+    public static boolean isUserExists(String name, String password, ArrayList<User> usersExists){
+        for (int i = 0; i < usersExists.size(); i++) {
+            if(usersExists.get(i).getName().equals(name))
+                if(usersExists.get(i).getPassword().equals(password))
+                    return true;
+        }
+        return false;
     }
 }
