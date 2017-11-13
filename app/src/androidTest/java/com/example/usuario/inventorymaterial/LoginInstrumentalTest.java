@@ -35,7 +35,7 @@ public class LoginInstrumentalTest {
     @Test
     public void isUserEmpty(){
         onView(withId(R.id.btnSignIn)).perform(click());
-        checkSnackBarDisplayByMessage(R.string.errorPasswordEmpty);
+        checkSnackBarDisplayByMessage(R.string.errorUsuarioEmpty);
     }
 
     /**
@@ -43,7 +43,8 @@ public class LoginInstrumentalTest {
      * */
     @Test
     public void isPasswordEmpty(){
-
+        onView(withId(R.id.btnSignIn)).perform(click());
+        checkSnackBarDisplayByMessage(R.string.errorPasswordEmpty);
     }
 
     /**

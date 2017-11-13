@@ -7,14 +7,13 @@ package com.example.usuario.inventorymaterial.ui.login;
 public class LoginPresenterImp implements LoginPresenter,LoginInteractor.OnLoginFinishedListener{
 
     private LoginView loginView;
-    private LoginInteractorImp loginInteractor;
+    private LoginInteractor loginInteractor;
 
     public LoginPresenterImp(LoginView loginView) {
         this.loginView = loginView;
         loginInteractor = new LoginInteractorImp();
     }
-
-
+    
     @Override
     public void validateCredentials(String user, String password) {
         loginInteractor.validateCredentials(user,password,this);
@@ -31,7 +30,22 @@ public class LoginPresenterImp implements LoginPresenter,LoginInteractor.OnLogin
     }
 
     @Override
-    public void onSucess() {
+    public void onPasswordError() {
+        loginView.setPasswordError();
+    }
 
+    @Override
+    public void onUserCorrect() {
+
+    }
+
+    @Override
+    public void onSucess() {
+    }
+
+    @Override
+    public void onDestroy() {
+        loginView = null;
+        loginInteractor = null;
     }
 }
