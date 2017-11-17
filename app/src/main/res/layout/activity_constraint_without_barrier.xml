@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundConstraint"
+    android:padding="8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgMonitor"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/monitor" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideTxvPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <TextView
+            android:id="@+id/txvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvNombrePro"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edtNombre"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro" />
+
+        <TextView
+            android:id="@+id/txvSerial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvSerialPro"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edtSerial"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro" />
+
+        <TextView
+            android:id="@+id/txvVendedor"
+            android:layout_width="62dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvVendedorPro"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edtVendedor"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro" />
+
+        <TextView
+            android:id="@+id/txvModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvModeloPro"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edtModelo"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro" />
+
+        <TextView
+            android:id="@+id/txvCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvCategoriaPro"
+            app:layout_constraintBottom_toBottomOf="@+id/spnCategoria"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro" />
+
+        <TextView
+            android:id="@+id/txvTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvTipoPro"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro"
+            app:layout_constraintTop_toTopOf="@+id/spnTipo" />
+
+        <TextView
+            android:id="@+id/txvDesripcionPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvDescription"
+            app:layout_constraintEnd_toStartOf="@+id/guideEdtPro"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro"
+            app:layout_constraintTop_toTopOf="@+id/edtDescripcionPro" />
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@id/txvNombre"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/imgMonitor" />
+
+        <EditText
+            android:id="@+id/edtSerial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@id/txvSerial"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/edtNombre" />
+
+        <EditText
+            android:id="@+id/edtVendedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@id/txvVendedor"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/edtSerial" />
+
+        <EditText
+            android:id="@+id/edtModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@id/txvModelo"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/edtVendedor" />
+
+        <Spinner
+            android:id="@+id/spnCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/edtModelo" />
+
+        <Spinner
+            android:id="@+id/spnSubCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/spnCategoria" />
+
+        <Spinner
+            android:id="@+id/spnTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/spnSubCategoria" />
+
+        <TextView
+            android:id="@+id/txvSubCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/txvSubcategiaPro"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro"
+            app:layout_constraintTop_toTopOf="@+id/spnSubCategoria" />
+
+        <EditText
+            android:id="@+id/edtDescripcionPro"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:labelFor="@id/txvDesripcionPro"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/spnTipo" />
+
+        <TextView
+            android:id="@+id/txvPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvPrecioPro"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro"
+            app:layout_constraintTop_toTopOf="@+id/edtPrecio" />
+
+        <EditText
+            android:id="@+id/edtPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@id/txvPrecio"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/edtDescripcionPro" />
+
+        <TextView
+            android:id="@+id/txvFCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvFCompra"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro"
+            app:layout_constraintTop_toTopOf="@+id/edtFCompra" />
+
+        <EditText
+            android:id="@+id/edtFCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@id/txvFCompra"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/edtPrecio" />
+
+        <TextView
+            android:id="@+id/txvUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvUrl"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro"
+            app:layout_constraintTop_toTopOf="@+id/edtUrl" />
+
+        <EditText
+            android:id="@+id/edtUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@id/txvUrl"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/edtFCompra" />
+
+        <TextView
+            android:id="@+id/txvNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/txvNotas"
+            app:layout_constraintStart_toStartOf="@+id/guideTxvPro"
+            app:layout_constraintTop_toTopOf="@+id/edtNotas" />
+
+        <EditText
+            android:id="@+id/edtNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@id/txvNotas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideEdtPro"
+            app:layout_constraintTop_toBottomOf="@+id/edtUrl" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideEdtPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="126dp" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
