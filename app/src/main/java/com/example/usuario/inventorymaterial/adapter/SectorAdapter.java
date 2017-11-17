@@ -2,7 +2,6 @@ package com.example.usuario.inventorymaterial.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +10,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.example.usuario.inventorymaterial.R;
-import com.example.usuario.inventorymaterial.pojo.Sector;
-import com.example.usuario.inventorymaterial.repository.SectorRepository;
+import com.example.usuario.inventorymaterial.data.db.pojo.Sector;
+import com.example.usuario.inventorymaterial.data.db.repository.SectorRepository;
 
 import java.util.ArrayList;
 
@@ -92,7 +91,6 @@ public class SectorAdapter extends RecyclerView.Adapter<SectorAdapter.SectorView
 
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
         }
     }
 }

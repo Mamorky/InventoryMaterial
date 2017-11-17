@@ -2,7 +2,7 @@ package com.example.usuario.inventorymaterial.ui.login;
 
 import android.text.TextUtils;
 
-import com.example.usuario.inventorymaterial.repository.UserRepository;
+import com.example.usuario.inventorymaterial.data.db.repository.UserRepository;
 import com.example.usuario.inventorymaterial.utils.CommonUtils;
 
 /**

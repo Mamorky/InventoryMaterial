@@ -1,6 +1,6 @@
-package com.example.usuario.inventorymaterial.repository;
+package com.example.usuario.inventorymaterial.data.db.repository;
 
-import com.example.usuario.inventorymaterial.pojo.User;
+import com.example.usuario.inventorymaterial.data.db.pojo.User;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class UserRepository {
     }
 
     private void inicialize(){
-        addUser(new User(1,"mamorky","123","Andrés","andres_ball@hotmail.com",true,true));
+        addUser(new User(1,"mamorky","123456Aa","Andrés","andres_ball@hotmail.com",true,true));
         addUser(new User(2,"jose","123","Jose Antonio","pepe@hotmail.com",false,true));
         addUser(new User(3,"ismael","123","Ismael","ismael@hotmail.com",true,false));
     }
