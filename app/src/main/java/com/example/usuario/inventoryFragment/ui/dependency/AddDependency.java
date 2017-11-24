@@ -9,15 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.usuario.inventoryFragment.R;
+import com.example.usuario.inventoryFragment.ui.dependency.presenter.AddEditDependencyContract;
 
 /**
  * Created by mamorky on 3/11/17.
  */
 
-public class AddDependency extends Fragment {
+public class AddDependency extends Fragment implements AddEditDependencyContract.View{
     public static final String TAG = "addeditdependency";
+    private AddEditDependencyContract.Presenter presenter;
 
-    AddDependency newInstance(Bundle arguments){
+    public static AddDependency newInstance(Bundle arguments){
         AddDependency addDependency = new AddDependency();
         if(arguments != null){
             addDependency.setArguments(arguments);
@@ -33,9 +35,15 @@ public class AddDependency extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
             }
         });
         if(getArguments()!=null){}
         return rootView;
+    }
+
+    @Override
+    public void setPresenter(AddEditDependencyContract.Presenter presenter){
+        this.presenter = presenter;
     }
 }

@@ -9,7 +9,7 @@ public interface ListDependencyContract {
     public interface Presenter {
     }
 
-    public interface View {
+    interface View {
         void setPresenter(ListDependencyContract.Presenter presenter);
     }
 }

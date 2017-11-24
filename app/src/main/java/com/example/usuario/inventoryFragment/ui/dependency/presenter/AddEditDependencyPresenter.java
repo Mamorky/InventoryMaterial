@@ -6,10 +6,14 @@ package com.example.usuario.inventoryFragment.ui.dependency.presenter;
 
 public class AddEditDependencyPresenter implements  AddEditDependencyContract.Presenter{
 
-    AddEditDependencyContract presenter;
+    private  AddEditDependencyContract.View view;
+
+    public AddEditDependencyPresenter (AddEditDependencyContract.View view) {
+        this.view = view;
+    }
 
     @Override
     public void validatedependency() {
-
+        this.view = view;
     }
 }

@@ -6,10 +6,11 @@ package com.example.usuario.inventoryFragment.ui.dependency.presenter;
 
 public interface AddEditDependencyContract{
     interface View{
-
+        void setPresenter(AddEditDependencyContract.Presenter presenter);
     }
 
-    interface  Presenter{
+    interface Presenter{
+
         void validatedependency();
     }
 }
